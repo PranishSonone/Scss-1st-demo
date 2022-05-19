@@ -1,0 +1,29 @@
+%btn{
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 8px 20px;
+  
+
+  &:hover{
+      transform: scale(.98);
+      -webkit-transform: scale(.98);
+      -moz-transform: scale(.98);
+      -ms-transform: scale(.98);
+      -o-transform: scale(.98);
+}
+
+}
+.btn-primary{
+    @extend %btn;
+    // background-color:$primary-color;
+    background-color: lighten($primary-color,10%);
+    // color: #575757;;
+}
+.btn-secondary{
+    @extend %btn;
+   background-color:$secondary-color;
+}
